@@ -42,6 +42,8 @@ Router.map(function() {
     });
     this.route('forms', function() {
       this.route('group');
+      this.route('controls');
+      this.route('checkbox-radios');
       this.route('validation');
     });
     this.route('lists', function() {
