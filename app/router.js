@@ -13,6 +13,7 @@ Router.map(function() {
       this.route('secondary');
       this.route('action');
     });
+    this.route('tooltips');
     this.route('navigation', function() {
       this.route('horizontal');
       this.route('vertical');
@@ -38,6 +39,10 @@ Router.map(function() {
     this.route('errors', function() {
       this.route('standard');
       this.route('large');
+    });
+    this.route('forms', function() {
+      this.route('group');
+      this.route('validation');
     });
     this.route('lists', function() {
       this.route('standard');
