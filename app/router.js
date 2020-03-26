@@ -7,4 +7,69 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('components', function() {
+    this.route('buttons', function() {
+      this.route('standard');
+      this.route('secondary');
+      this.route('action');
+    });
+    this.route('navigation', function() {
+      this.route('horizontal');
+      this.route('vertical');
+      this.route('tabs');
+      this.route('pills');
+    });
+    this.route('tables', function() {
+      this.route('standard');
+      this.route('dark');
+      this.route('striped');
+      this.route('small');
+    });
+    this.route('images', function() {
+      this.route('responsive');
+      this.route('thumbnail');
+      this.route('avatar');
+    });
+    this.route('alerts', function() {
+      this.route('standard');
+      this.route('close');
+      this.route('link');
+    });
+    this.route('errors', function() {
+      this.route('standard');
+      this.route('large');
+    });
+    this.route('badges');
+  });
+  this.route('docs', {
+    path: '/'
+  }, function() {
+    this.route('brand', function() {
+      this.route('logo');
+      this.route('typography');
+      this.route('colour');
+      this.route('icons');
+    });
+    this.route('general', function() {
+      this.route('index'); // ui-elements
+      this.route('structure');
+      this.route('navigation');
+      this.route('tables');
+      this.route('forms');
+      this.route('images');
+
+    });
+    this.route('components', function() {
+      this.route('lists');
+      this.route('cards');
+      this.route('charts');
+    });
+    this.route('info', function() {
+      this.route('alerts');
+      this.route('errors');
+    });
+    this.route('layouts', function() {
+      this.route('login');
+    });
+  });
 });

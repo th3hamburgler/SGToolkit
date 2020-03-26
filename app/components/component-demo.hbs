@@ -1,0 +1,29 @@
+<section class="demo" ...attributes>
+  <header class="demo__header">
+    <h1 class="demo__title">{{@title}}</h1>
+    <div class="demo__tabs">
+      <div class="btn-group" role="group" aria-label="Tab">
+        <button class="btn btn-sm btn-outline-primary {{if showPreview "active"}}" type=" button" {{action 'setTab' 'preview'}}>Preview</button>
+        <button class="btn btn-sm btn-outline-primary {{if showCode "active"}}" type=" button" {{action 'setTab' 'code'}}>Code</button>
+      </div>
+      <button class="btn btn-sm btn-outline-primary" {{action "copyCode" @snippet}}>
+        <FaIcon @icon="clipboard" />
+      </button>
+    </div>
+  </header>
+  {{#if showPreview}}
+    <div class="demo__preview bg-primary-60">
+      <iframe class="demo__frame bg-white {{if @padded "p-3"}}" src={{@src}} frameborder="0"></iframe>
+      <div class="demo__handle">
+        <FaIcon @icon="grip-lines-vertical" />
+      </div>
+    </div>
+  {{/if}}
+  {{#if showCode}}
+    <div class="demo__code">
+      {{#let (get-code-snippet @snippet) as |snippet|}}
+        <CodeBlock @language={{snippet.language}}>{{snippet.source}}</CodeBlock>
+      {{/let}}
+    </div>
+  {{/if}}
+</section>

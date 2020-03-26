@@ -1,0 +1,61 @@
+<div class="col bg-light min-height-full py-4 px-5">
+  <header class="sg-header">
+    <h1 class="display-3 text-primary font-weight-light mb-0">Design System Quick Start</h1>
+  </header>
+
+  <div class="mx-8">
+    <div class="row mb-4">
+      <div class="col">
+        <LinkTo @route="docs.brand.logo">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.brand" class="mb-3"}}
+            <h1 class="display-3">Brand</h1>
+          </section>
+        </LinkTo>
+      </div>
+      <div class="col">
+        <LinkTo @route="docs.general">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.general" class="mb-3"}}
+            <h1 class="display-3">General UI</h1>
+          </section>
+        </LinkTo>
+      </div>
+      <div class="col">
+        <LinkTo @route="docs.general.forms">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.forms" class="mb-3"}}
+            <h1 class="display-3">Forms</h1>
+          </section>
+        </LinkTo>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col">
+        <LinkTo @route="docs.components.charts">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.charts" class="mb-3"}}
+            <h1 class="display-3">Charts</h1>
+          </section>
+        </LinkTo>
+      </div>
+      <div class="col">
+        <LinkTo @route="docs.components.cards">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.cards" class="mb-3"}}
+            <h1 class="display-3">Cards</h1>
+          </section>
+        </LinkTo>
+      </div>
+      <div class="col">
+        <LinkTo @route="docs.layouts">
+          <section class="text-center bg-white py-5">
+            {{svg-jar "hero.info" class="mb-3"}}
+            <h1 class="display-3">Layout</h1>
+          </section>
+        </LinkTo>
+      </div>
+    </div>
+  </div>
+
+</div>
