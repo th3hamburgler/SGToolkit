@@ -39,6 +39,12 @@ Router.map(function() {
       this.route('standard');
       this.route('large');
     });
+    this.route('lists', function() {
+      this.route('standard');
+      this.route('badges');
+      this.route('resource');
+      this.route('avatar');
+    })
     this.route('badges');
   });
   this.route('docs', {
