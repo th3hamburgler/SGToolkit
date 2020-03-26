@@ -60,6 +60,9 @@ export default Controller.extend({
         items: [{
             title: 'Lists',
             route: 'docs.components.lists',
+          }, {
+            title: 'Pagination',
+            route: 'docs.components.pagination',
           },
           {
             title: 'Cards',

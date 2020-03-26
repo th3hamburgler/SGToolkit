@@ -44,7 +44,10 @@ Router.map(function() {
       this.route('badges');
       this.route('resource');
       this.route('avatar');
-    })
+    });
+    this.route('pagination', function() {
+      this.route('standard');
+    });
     this.route('badges');
   });
   this.route('docs', {
@@ -67,6 +70,7 @@ Router.map(function() {
     });
     this.route('components', function() {
       this.route('lists');
+      this.route('pagination');
       this.route('cards');
       this.route('charts');
     });
