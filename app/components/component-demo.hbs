@@ -13,10 +13,13 @@
   </header>
   {{#if showPreview}}
     <div class="demo__preview bg-primary-60">
-      <iframe class="demo__frame bg-white {{if @padded "p-3"}}" src={{@src}} frameborder="0"></iframe>
-      <div class="demo__handle">
-        <FaIcon @icon="grip-lines-vertical" />
-      </div>
+      <ReSizable class="bg-white d-flex" @directions={{this.directions}} @minWidth={{this.minWidth}} @maxWidth={{this.maxWidth}} @width={{this.width}} @onResizeStart={{action "resizeStart"}} @onResizeStop={{action "resizeStop"}}>
+        <iframe class="demo__frame  {{if @padded "p-3"}}" src={{url}} frameborder="0"></iframe>
+        {{!-- <div>Hello</div> --}}
+        <div class="demo__handle">
+          <FaIcon @icon="grip-lines-vertical" />
+        </div>
+      </ReSizable>
     </div>
   {{/if}}
   {{#if showCode}}
