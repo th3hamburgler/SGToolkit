@@ -258,7 +258,7 @@ $sizes: (
     justify-content: center;
     width          : 1.5rem;
     position       : absolute;
-    right          : 0;
+    right          : -24px;
     height         : 100%;
     // margin-right   : -1.5rem;
     &:hover {
@@ -277,11 +277,12 @@ $sizes: (
 
   &__code {
     max-width: 100%;
+    width    : 100%;
   }
 }
 
 .re-sizable > .resizer.right {
-  // right     : 0;
+  right  : -24px;
   // background: rgba(hotpink,.5);
   z-index: 99;
 }

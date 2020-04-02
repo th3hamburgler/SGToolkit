@@ -56,6 +56,16 @@ Router.map(function() {
       this.route('standard');
     });
     this.route('badges');
+    this.route('cards', function() {
+      this.route('body');
+      this.route('text');
+      this.route('images');
+      this.route('kitchen');
+      this.route('header');
+      this.route('navigation');
+      this.route('background');
+      this.route('border');
+    });
   });
   this.route('docs', {
     path: '/'
