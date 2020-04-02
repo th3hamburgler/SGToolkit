@@ -285,3 +285,35 @@ html {
     border       : none;
   }
 }
+
+.row-layout {
+  display       : flex;
+  flex-direction: column;
+  flex-wrap     : nowrap;
+  margin-right  : -15px;
+  margin-left   : -15px;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.col-sidebar {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width     : 320px;
+    min-width : 320px;
+    min-height: 100vh;
+  }
+}
+
+.col-main {
+  flex     : 1 1 auto;
+  max-width: 100%;
+  @include media-breakpoint-up(md) {
+    min-height: 100vh;
+  }
+}
+// svg {
+//   width : 100%;
+//   height: auto;
+// }
