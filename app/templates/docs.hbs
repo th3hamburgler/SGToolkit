@@ -31,7 +31,7 @@
           {{#each section.items as |item|}}
             <li class="nav-item">
               <LinkTo @route={{item.route}} class="nav-link text-right d-flex flex-row">
-                {{svg-jar "icon.logo"}}
+                {{svg-jar item.icon class="w-4 h-4"}}
                 <div class="flex-fill">{{item.title}}</div>
               </LinkTo>
             </li>

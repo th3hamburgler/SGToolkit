@@ -12,16 +12,20 @@ export default Controller.extend({
         items: [{
             title: 'Logo',
             route: 'docs.brand.logo',
+            icon: 'icon.logo',
           }, {
             title: 'Typography',
             route: 'docs.brand.typography',
+            icon: 'icon.typography',
           }, {
             title: 'Colour',
             route: 'docs.brand.colour',
+            icon: 'icon.colour',
           },
           {
             title: 'Icons',
             route: 'docs.brand.icons',
+            icon: 'icon.icons',
           }
         ],
       },
@@ -31,26 +35,32 @@ export default Controller.extend({
         items: [{
             title: 'UI Elements',
             route: 'docs.general.index',
+            icon: 'icon.ui',
           },
           {
             title: 'Structure',
             route: 'docs.general.structure',
+            icon: 'icon.structure',
           },
           {
             title: 'Navigation',
             route: 'docs.general.navigation',
+            icon: 'icon.navigation',
           },
           {
             title: 'Tables',
             route: 'docs.general.tables',
+            icon: 'icon.tables',
           },
           {
             title: 'Forms',
             route: 'docs.general.forms',
+            icon: 'icon.forms',
           },
           {
             title: 'Images',
             route: 'docs.general.images',
+            icon: 'icon.logo',
           },
         ]
       },
@@ -60,17 +70,21 @@ export default Controller.extend({
         items: [{
             title: 'Lists',
             route: 'docs.components.lists',
+            icon: 'icon.logo',
           }, {
             title: 'Pagination',
             route: 'docs.components.pagination',
+            icon: 'icon.logo',
           },
           {
             title: 'Cards',
             route: 'docs.components.cards',
+            icon: 'icon.cards',
           },
           {
             title: 'Charts',
             route: 'docs.components.charts',
+            icon: 'icon.charts',
           },
         ],
       }, {
@@ -79,10 +93,12 @@ export default Controller.extend({
         items: [{
             title: 'Alerts',
             route: 'docs.info.alerts',
+            icon: 'icon.logo',
           },
           {
             title: 'Errors',
             route: 'docs.info.errors',
+            icon: 'icon.errors',
           },
         ],
       }, {
@@ -91,6 +107,7 @@ export default Controller.extend({
         items: [{
           title: 'Login',
           route: 'docs.layouts.login',
+          icon: 'icon.login.register',
         }, ],
       },
     ]
