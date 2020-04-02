@@ -19,10 +19,11 @@ export default Component.extend({
   router: service(),
   // Properties
   tab: 'preview',
-  tagName: '',
+  tagName: 'section',
+  classNames: ['demo'],
   width: 320,
   minWidth: 320,
-  maxWidth: 1200,
+  maxWidth: 600,
   directions: dragDirections,
   // Computed
   showPreview: equal('tab', 'preview'),
@@ -30,6 +31,12 @@ export default Component.extend({
   url: computed('src', function() {
     return this.router.urlFor(this.src);
   }),
+  // Methods
+  didRender() {
+    this._super(...arguments);
+    // set max with to width of the component
+    this.set('maxWidth', this.element.clientWidth);
+  },
   // Actions
   actions: {
     setTab(tab) {
