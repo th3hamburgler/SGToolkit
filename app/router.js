@@ -54,6 +54,7 @@ Router.map(function() {
     });
     this.route('pagination', function() {
       this.route('standard');
+      this.route('breadcrumbs');
     });
     this.route('badges');
     this.route('cards', function() {
