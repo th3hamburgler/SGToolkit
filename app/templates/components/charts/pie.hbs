@@ -1,0 +1,29 @@
+<div class="p-3">
+  {{!-- BEGIN-SNIPPET bar-chart --}}
+  <canvas id="bar-chart" width="600" height="300"></canvas>
+  <script>
+    const ctx = document.getElementById('bar-chart'),
+      data = {
+        labels: ["On Time", "Early", "Late", ],
+        datasets: [{
+          label: "Warehouse Deliveries",
+          backgroundColor: ["#12ADAD", "#FAB601", "#321850"],
+          borderWidth: 0,
+          data: [120, 30, 18]
+        }]
+      },
+      options = {
+        title: {
+          display: true,
+          text: 'Warehouse Deliveries March 2020'
+        }
+      };
+
+    let myBarChart = new Chart(ctx, {
+      type: 'doughnut',
+      data,
+      options
+    });
+  </script>
+  {{!-- END-SNIPPET --}}
+</div>

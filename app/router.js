@@ -67,6 +67,18 @@ Router.map(function() {
       this.route('background');
       this.route('border');
     });
+    this.route('charts', function() {
+      this.route('bar');
+      this.route('grouped-bar');
+      this.route('stacked-bar');
+      this.route('horizontal-bar');
+      this.route('pie');
+      this.route('ring');
+      this.route('line');
+      this.route('stacked-line');
+      this.route('scatter');
+      this.route('timeline');
+    });
   });
   this.route('docs', {
     path: '/'

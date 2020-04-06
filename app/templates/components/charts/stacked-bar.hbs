@@ -1,0 +1,52 @@
+<div class="p-3">
+  {{!-- BEGIN-SNIPPET stacked-bar-chart --}}
+  <canvas id="bar-chart" width="600" height="300"></canvas>
+  <script>
+    const ctx = document.getElementById('bar-chart'),
+      data = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+            label: "Seg 2 Sickness",
+            backgroundColor: "#12ADAD",
+            data: [2478, 5267, 3529, 2439, 4335, 3002]
+          },
+          {
+            label: "Seg 3 Sickness",
+            backgroundColor: "#FAB601",
+            data: [2834, 5957, 3109, 2094, 4599, 4527]
+          },
+          {
+            label: "Seg 4 & 5 Sickness",
+            backgroundColor: "#321850",
+            data: [1023, 2302, 1262, 938, 2300, 1240]
+          }
+        ]
+      },
+      options = {
+        title: {
+          display: true,
+          text: 'Hours lost to Sickness per month'
+        },
+        scales: {
+          yAxes: [{
+            stacked: true,
+            drawOnChartArea: false,
+            ticks: {
+              beginAtZero: true
+            }
+          }],
+          xAxes: [{
+            stacked: true,
+            drawOnChartArea: false,
+          }]
+        }
+      };
+
+    let myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data,
+      options
+    });
+  </script>
+  {{!-- END-SNIPPET --}}
+</div>

@@ -1,0 +1,47 @@
+<div class="p-3">
+  {{!-- BEGIN-SNIPPET bar-chart --}}
+  <canvas id="bar-chart" width="600" height="300"></canvas>
+  <script>
+    const ctx = document.getElementById('bar-chart'),
+      data = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+          label: "Hours Sickness",
+          backgroundColor: "#12ADAD",
+          data: [2478, 5267, 3529, 2439, 4335, 3002]
+        }]
+      },
+      options = {
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          text: 'Hours lost to Sickness per month'
+        },
+        scales: {
+          yAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+            ticks: {
+              beginAtZero: true
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+          }]
+        }
+
+      };
+
+    let myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data,
+      options
+    });
+  </script>
+  {{!-- END-SNIPPET --}}
+</div>
