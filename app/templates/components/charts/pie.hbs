@@ -1,8 +1,8 @@
 <div class="p-3">
-  {{!-- BEGIN-SNIPPET bar-chart --}}
-  <canvas id="bar-chart" width="600" height="300"></canvas>
+  {{!-- BEGIN-SNIPPET pie-chart --}}
+  <canvas id="pie-chart" width="600" height="300"></canvas>
   <script>
-    const ctx = document.getElementById('bar-chart'),
+    const ctx = document.getElementById('pie-chart'),
       data = {
         labels: ["On Time", "Early", "Late", ],
         datasets: [{
@@ -19,7 +19,7 @@
         }
       };
 
-    let myBarChart = new Chart(ctx, {
+    let mypieChart = new Chart(ctx, {
       type: 'doughnut',
       data,
       options
