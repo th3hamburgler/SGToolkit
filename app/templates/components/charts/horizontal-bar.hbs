@@ -22,7 +22,7 @@
       options = {
         title: {
           display: true,
-          text: 'Hours lost to Sickness per month'
+          text: 'Hours lost to sickness per month'
         },
         scales: {
           xAxes: [{
@@ -36,7 +36,8 @@
           yAxes: [{
             gridLines: {
               drawOnChartArea: false
-            }
+            },
+            barPercentage: 1.0, // removes spacing between grouped bars
           }]
         }
 

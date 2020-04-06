@@ -1,0 +1,100 @@
+<div class="p-3">
+  {{!-- BEGIN-SNIPPET scatter-chart --}}
+  <canvas id="scatter-chart" width="600" height="300"></canvas>
+  <script>
+    const ctx = document.getElementById('scatter-chart'),
+      data = {
+        datasets: [{
+          label: 'Seg 2',
+          backgroundColor: "#12ADAD",
+          data: [{
+            x: 140,
+            y: 23
+          }, {
+            x: 124,
+            y: 340
+          }, {
+            x: 35,
+            y: 163
+          }, {
+            x: 142,
+            y: 243
+          }, {
+            x: 14,
+            y: 390
+          }, {
+            x: 335,
+            y: 263
+          }, {
+            x: 120,
+            y: 13
+          }, {
+            x: 114,
+            y: 34
+          }, {
+            x: 359,
+            y: 13
+          }]
+        }, {
+          label: 'Seg 3',
+          backgroundColor: "#FAB601",
+          data: [{
+            x: 93,
+            y: 23
+          }, {
+            x: 0,
+            y: 130
+          }, {
+            x: 310,
+            y: 55
+          }, {
+            x: 154,
+            y: 223
+          }, {
+            x: 152,
+            y: 30
+          }, {
+            x: 410,
+            y: 255
+          }, {
+            x: 193,
+            y: 253
+          }, {
+            x: 124,
+            y: 162
+          }, {
+            x: 241,
+            y: 155
+          }]
+        }]
+      },
+      options = {
+        title: {
+          display: true,
+          text: 'Employee overtime vs sickness hours'
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+            type: 'linear',
+            position: 'bottom'
+          }],
+          yAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+
+          }]
+        }
+      };
+
+    let myscatterChart = new Chart(ctx, {
+      type: 'scatter',
+      data,
+      options
+    });
+  </script>
+  {{!-- END-SNIPPET --}}
+</div>

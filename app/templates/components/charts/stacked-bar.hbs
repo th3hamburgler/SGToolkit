@@ -25,19 +25,23 @@
       options = {
         title: {
           display: true,
-          text: 'Hours lost to Sickness per month'
+          text: 'Hours lost to sickness per month'
         },
         scales: {
           yAxes: [{
             stacked: true,
-            drawOnChartArea: false,
+            gridLines: {
+              drawOnChartArea: false
+            },
             ticks: {
               beginAtZero: true
             }
           }],
           xAxes: [{
             stacked: true,
-            drawOnChartArea: false,
+            gridLines: {
+              drawOnChartArea: false
+            },
           }]
         }
       };

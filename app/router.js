@@ -75,7 +75,6 @@ Router.map(function() {
       this.route('pie');
       this.route('ring');
       this.route('line');
-      this.route('stacked-line');
       this.route('scatter');
       this.route('timeline');
     });
