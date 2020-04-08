@@ -1,0 +1,5 @@
+{{#if @copy}}
+  <code {{on "click" (fn this.copyCode @copy)}} class="cursor-pointer" ...attributes>{{yield}}</code>
+{{else}}
+  <code ...attributes>{{yield}}</code>
+{{/if}}
