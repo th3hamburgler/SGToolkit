@@ -156,10 +156,36 @@ $sizes: (
   min-width: 0;
 }
 
-.alert-danger {
-  background  : $danger;
-  border-color: $danger;
-  color       : $white;
+.alert {
+  &-dark {
+    background  : $dark;
+    border-color: $dark;
+    color       : $white;
+  }
+
+  &-primary {
+    background  : $primary;
+    border-color: $primary;
+    color       : $white;
+  }
+
+  &-success {
+    background  : $success;
+    border-color: $success;
+    color       : $white;
+  }
+
+  &-warning {
+    background  : $warning;
+    border-color: $warning;
+    color       : $white;
+  }
+
+  &-danger {
+    background  : $danger;
+    border-color: $danger;
+    color       : $white;
+  }
 
   .alert-link {
     color: $white;
@@ -331,6 +357,18 @@ html {
   @include media-breakpoint-up(md) {
     min-height: 100vh;
   }
+}
+
+.toast-container {
+  align-items    : flex-end;
+  display        : flex;
+  flex-direction : column;
+  bottom         : 0;
+  justify-content: flex-end;
+  width          : 100%;
+  padding        : 0 1rem;
+  position       : fixed;
+  left           : 0;
 }
 // svg {
 //   width : 100%;

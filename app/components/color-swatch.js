@@ -2,17 +2,29 @@ import Component from '@glimmer/component';
 import {
   action
 } from '@ember/object';
+import {
+  inject as service
+} from '@ember/service';
 
 export default class ColorSwatchComponent extends Component {
+  // Serices
+  @service
+  flashMessages
+  // Actions
   @action
   copyHex(hex) {
+    const flashMessages = this.flashMessages;
+
     navigator.clipboard
       .writeText(hex)
       .then(() => {
-        // alert('Text copied.');
+        flashMessages.add({
+          message: `Hex value ${hex} copied`,
+          type: 'dark',
+        });
       })
       .catch(() => {
-        alert('Failed to copy text.');
+        flashMessages.danger(`Failed to copy hex ${hex}.`);
       });
   }
 }
