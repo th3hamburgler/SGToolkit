@@ -1,21 +1,36 @@
 <div class="p-3">
   {{!-- BEGIN-SNIPPET standard-timeline --}}
   <div class="timeline" data-timeline data-starts="2020-04-01 00:00:00">
-    <div class="timeline__event timeline__event--primary" data-starts="2020-04-01 00:00:00" data-ends="2020-04-01 04:00:00">
+    <div class="timeline__event timeline__event--primary" data-event data-starts="2020-04-01 00:00:00" data-ends="2020-04-01 04:00:00">
       0am - 4am
     </div>
 
-    <div class="timeline__event timeline__event--info" data-starts="2020-04-01 05:00:00" data-ends="2020-04-01 08:00:00">
+    <div class="timeline__event timeline__event--info" data-event data-starts="2020-04-01 05:00:00" data-ends="2020-04-01 08:00:00">
       5am - 8am
     </div>
 
-    <div class="timeline__event timeline__event--warning" data-starts="2020-04-01 08:00:00" data-ends="2020-04-01 16:00:00">
+    <div class="timeline__event timeline__event--warning" data-event data-starts="2020-04-01 08:00:00" data-ends="2020-04-01 16:00:00">
       8am - 4pm
     </div>
 
-    <div class="timeline__event timeline__event--secondary" data-starts="2020-04-01 16:30:00" data-ends="2020-04-02 00:00:00">
+    <div class="timeline__event timeline__event--secondary" data-event data-starts="2020-04-01 16:30:00" data-ends="2020-04-02 00:00:00">
       4:30pm - 0am
     </div>
   </div>
   {{!-- END-SNIPPET --}}
+  <p class="mt-3">
+    The timeline widget can be used to present time based events on a linear timeline. The timeline consists of two basic elements the reset of the component is generated via javascript.
+  </p>
+  <h5>Timeline Container</h5>
+  <p><code>&lt;div class="timeline" data-timeline data-starts="..."&gt;...&lt;/div&gt;</code></p>
+  <p>
+    The container must include the <var>data-timeline</var> attribute to be detected by javascript and the <var>timeline</var> class for styling.
+    It must also have a start datetime defined via the <var>data-starts</var> attribute. This should be in a <var>YYYY-MM-DD HH:mm:ss</var> format.
+  </p>
+  <h5>Timeline Events</h5>
+  <p><code>&lt;div class="timeline__event" data-event data-starts="..." data-ends="..."&gt;&lt;/div&gt;</code></p>
+  <p>
+    Timeline events should appear as children of the timeline element. They must include the <var>data-event</var> attribute to be detected by javascript and the <var>timeline__event</var> class for styling.
+    They must also have a start and end datetime defined via <var>data-starts</var> & <var>data-ends</var> attributes. These again should be in a <var>YYYY-MM-DD HH:mm:ss</var> format.
+  </p>
 </div>

@@ -2,21 +2,31 @@
   {{!-- BEGIN-SNIPPET minutes-timeline --}}
 
   <div class="timeline" data-timeline data-starts="2020-04-01 09:00:00" data-period-length=30 data-total-periods=14 data-period-label-format="hh:mm">
-    <div class="timeline__event timeline__event--primary" data-starts="2020-04-01 09:00:00" data-ends="2020-04-01 10:00:00">
+    <div class="timeline__event timeline__event--primary" data-event data-starts="2020-04-01 09:00:00" data-ends="2020-04-01 10:00:00">
       Geography
     </div>
 
-    <div class="timeline__event timeline__event--info" data-starts="2020-04-01 10:30:00" data-ends="2020-04-01 12:30:00">
+    <div class="timeline__event timeline__event--info" data-event data-starts="2020-04-01 10:30:00" data-ends="2020-04-01 12:30:00">
       Maths
     </div>
 
-    <div class="timeline__event timeline__event--warning" data-starts="2020-04-01 13:30:00" data-ends="2020-04-01 14:30:00">
+    <div class="timeline__event timeline__event--warning" data-event data-starts="2020-04-01 13:30:00" data-ends="2020-04-01 14:30:00">
       Science
     </div>
 
-    <div class="timeline__event timeline__event--secondary" data-starts="2020-04-01 14:30:00" data-ends="2020-04-01 15:30:00">
+    <div class="timeline__event timeline__event--secondary" data-event data-starts="2020-04-01 14:30:00" data-ends="2020-04-01 15:30:00">
       PE
     </div>
   </div>
   {{!-- END-SNIPPET --}}
+  <p class="mt-3">
+    You can customise the period length, number of periods and the period label format by passing in extra data attributes to the timeline element.
+  </p>
+  <h5>Customise the Timeline Periods</h5>
+  <p><code>data-period-length=30</code></p>
+  <p>The number of mins each period area should take up. Default is 60</p>
+  <p><code>data-total-periods=14</code></p>
+  <p>How many periods should appear on the timeline. Default is 24</p>
+  <p><code>data-period-label-format="hh:mm"</code></p>
+  <p>The datetime format to use for period labels see <a href="https://momentjs.com/docs/#/displaying/">moment docs</a>. Default is "ha"</p>
 </div>

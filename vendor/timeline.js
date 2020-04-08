@@ -52,7 +52,7 @@
         }
 
 
-        tl.querySelectorAll('.timeline__event').forEach(ev => {
+        tl.querySelectorAll('[data-event]').forEach(ev => {
 
           const starts = ev.dataset.starts,
             ends = ev.dataset.ends;
