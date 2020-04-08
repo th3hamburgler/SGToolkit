@@ -18,8 +18,13 @@ $light: #F4F4F4;
 /* */
 $grey-80: #9F9F9F;
 $grey-60: #B7B7B7;
-$grey-40: #E8E8E8;
+$grey-40: #CFCFCF;
 $grey-20: #E7E7E7;
+/* */
+$soft-80: #D1D1D1;
+$soft-60: #DDDDDD;
+$soft-40: #E3E3E3;
+$soft-20: #EEEEEE;
 /* */
 $dark-80: #636363;
 $dark-60: #8A8A8A;
@@ -39,10 +44,10 @@ $warning: $yellow;
 /* */
 $theme-colors: (
   "soft"      : $soft,
-  "soft-80"   : #D1D1D1,
-  "soft-60"   : #DDDDDD,
-  "soft-40"   : #E8E8E8,
-  "soft-20"   : #F4F4F4,
+  "soft-80"   : $soft-80,
+  "soft-60"   : $soft-60,
+  "soft-40"   : $soft-40,
+  "soft-20"   : $soft-20,
   "grey"      : $grey,
   "grey-80"   : $grey-80,
   "grey-60"   : $grey-60,
@@ -167,6 +172,10 @@ $sizes: (
 
 .form-group {
   max-width: 25rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .sg-nav {

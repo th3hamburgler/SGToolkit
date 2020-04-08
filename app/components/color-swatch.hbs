@@ -1,0 +1,8 @@
+<div class="sg-pallet bg-{{@color}} cursor-pointer {{@textClass}}" {{on "click" (fn this.copyHex @hex)}}>
+  {{#if @title}}
+    <div class="sg-pallet__title">{{@title}}</div>
+  {{/if}}
+  {{#if @hex}}
+    <div class="sg-pallet__text">{{@hex}}</div>
+  {{/if}}
+</div>
