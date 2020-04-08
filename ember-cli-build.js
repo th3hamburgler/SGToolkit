@@ -17,7 +17,8 @@ module.exports = function(defaults) {
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
-  // app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.js');
+  app.import('vendor/timeline.js');
+
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values
