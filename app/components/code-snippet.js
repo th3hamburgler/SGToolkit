@@ -20,12 +20,12 @@ export default class CodeSnippetComponent extends Component {
         .writeText(code)
         .then(() => {
           flashMessages.add({
-            message: `Code ${code} copied`,
+            message: `Code "${code}" copied`,
             type: 'dark',
           });
         })
         .catch(() => {
-          flashMessages.danger(`Failed to copy code ${code}.`);
+          flashMessages.danger(`Failed to copy code "${code}".`);
         });
     }
   }

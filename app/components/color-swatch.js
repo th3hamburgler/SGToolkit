@@ -19,12 +19,12 @@ export default class ColorSwatchComponent extends Component {
       .writeText(hex)
       .then(() => {
         flashMessages.add({
-          message: `Hex value ${hex} copied`,
+          message: `Hex value "${hex}" copied`,
           type: 'dark',
         });
       })
       .catch(() => {
-        flashMessages.danger(`Failed to copy hex ${hex}.`);
+        flashMessages.danger(`Failed to copy hex "${hex}".`);
       });
   }
 }
