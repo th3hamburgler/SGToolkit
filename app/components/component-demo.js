@@ -17,6 +17,7 @@ const dragDirections = ["right"];
 export default Component.extend({
   // Service
   router: service(),
+  flashMessages: service(),
   // Properties
   tab: 'preview',
   tagName: 'section',
@@ -46,14 +47,19 @@ export default Component.extend({
       this.set('tab', tab);
     },
     copyCode(snippetName) {
-      const snippet = getCodeSnippet(snippetName);
+      const snippet = getCodeSnippet(snippetName),
+        flashMessages = this.flashMessages;
+
       navigator.clipboard
         .writeText(snippet.source)
         .then(() => {
-          // alert('Text copied.');
+          flashMessages.add({
+            message: `Example code copied to clipboard`,
+            type: 'dark',
+          });
         })
         .catch(() => {
-          alert('Failed to copy text.');
+          flashMessages.danger(`Failed to copy code to clipboard`);
         });
     },
     resizeStart(direction, event, element) {
