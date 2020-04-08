@@ -86,6 +86,11 @@ export default Controller.extend({
             route: 'docs.components.charts',
             icon: 'icon.charts',
           },
+          {
+            title: 'Widgets',
+            route: 'docs.components.widgets',
+            icon: 'icon.charts',
+          },
         ],
       }, {
         title: 'Info',

@@ -22,10 +22,55 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/sgtoolkit.js"></script>
 
+    <script type="text/javascript">
+      /* global moment */
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.timeline').forEach(tl => {
+          const timelineStarts = tl.dataset.starts,
+            labelFormat = tl.dataset.periodLabelFormat,
+            periodLength = tl.dataset.periodLength,
+            totalPeriods = tl.dataset.totalPeriods,
+            totalDuration = tl.dataset.duration, // total duration of entire timeline
+            timelineInterval = tl.dataset.interval,
+            minsPerRem = periodLength/3; // mins per 1rem unit
+
+
+          let time = moment(timelineStarts);
+
+          for (var p = 0; p < totalPeriods; p++) {
+
+            let label = (p === 0 ? "" : time.format(labelFormat)),
+              first = (p === 0 ? "first" : ""),
+              last = (p === (totalPeriods - 1) ? "last" : "");
+
+            tl.insertAdjacentHTML('beforeend', `<div class="timeline__period ${first} ${last}"><div class="timeline__label">${label}</div></div>`);
+
+            time.add(periodLength, 'm'); // add period duration in mins to running time
+          }
+
+
+          tl.querySelectorAll('.timeline__event').forEach(ev => {
+
+            const starts = moment(ev.dataset.starts),
+              ends = moment(ev.dataset.ends)
+            duration = moment.duration(ends.diff(starts)).asMinutes(),
+              offset = moment.duration(starts.diff(timelineStarts)).asMinutes();
+
+
+            let x = (offset / minsPerRem),
+              w = (duration / minsPerRem);
+
+            ev.style.transform = `translateX(${x}rem)`;
+            ev.style.width = `${w}rem`;
+          })
+        });
+      });
+    </script>
     {{content-for "body-footer"}}
   </body>
 </html>

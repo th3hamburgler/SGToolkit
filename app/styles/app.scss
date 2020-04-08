@@ -16,6 +16,12 @@ $grey: #878787;
 $soft: #C6C6C6;
 $light: #F4F4F4;
 /* */
+$primary: $purple;
+$success: $green;
+$secondary: $dark;
+$info: $cyan;
+$warning: $yellow;
+/* */
 $grey-80: #9F9F9F;
 $grey-60: #B7B7B7;
 $grey-40: #CFCFCF;
@@ -37,10 +43,30 @@ $primary-40: #ADA3B9;
 $primary-20: #D6D1DC;
 $primary-10: #EBE8EE;
 /* */
-$primary: $purple;
-$secondary: $dark;
-$info: $cyan;
-$warning: $yellow;
+$success-80: #aec833;
+$success-60: #c2d666;
+$success-40: #d7e399;
+$success-20: #ebf1cc;
+/* */
+$warning-80: #fbc534;
+$warning-60: #fcd367;
+$warning-40: #fde299;
+$warning-20: #fef0cc;
+/* */
+$danger-80: #ff3333;
+$danger-60: #ff6666;
+$danger-40: #ff9999;
+$danger-20: #ffcccc;
+/* */
+$info-80: #34BEBC;
+$info-60: #65CFCF;
+$info-40: #99DFDE;
+$info-20: #CCEEEE;
+/* */
+$warning-80: #F9C532;
+$warning-60: #FBD266;
+$warning-40: #FCE199;
+$warning-20: #FDEFCD;
 /* */
 $theme-colors: (
   "soft"      : $soft,
@@ -62,14 +88,14 @@ $theme-colors: (
   "dark-60"   : $dark-60,
   "dark-40"   : $dark-40,
   "dark-20"   : $dark-20,
-  "info-80"   : #34BEBC,
-  "info-60"   : #65CFCF,
-  "info-40"   : #99DFDE,
-  "info-20"   : #CCEEEE,
-  "warning-80": #F9C532,
-  "warning-60": #FBD266,
-  "warning-40": #FCE199,
-  "warning-20": #FDEFCD,
+  "info-80"   : $info-80,
+  "info-60"   : $info-60,
+  "info-40"   : $info-40,
+  "info-20"   : $info-20,
+  "warning-80": $warning-80,
+  "warning-60": $warning-60,
+  "warning-40": $warning-40,
+  "warning-20": $warning-20,
   "blue"      : $blue,
   "indigo"    : $indigo,
   "purple"    : $purple,
@@ -369,6 +395,121 @@ html {
   padding        : 0 1rem;
   position       : fixed;
   left           : 0;
+}
+
+.timeline {
+  padding-top: 2rem;
+  overflow   : auto;
+  display    : flex;
+  min-height : 7rem;
+  position   : relative;
+
+  &--multiple {
+    flex-direction: column;
+  }
+
+  &__periods {}
+
+  &__periods {
+    // border       : 1px solid $soft;
+    // border-radius: 0.25rem;
+  }
+
+  &__label,
+  &__period {
+    flex-shrink: 0;
+    width      : 3rem;
+  }
+
+  &__label {
+    font-size : $font-size-sm;
+    color     : $dark;
+    position  : relative;
+    text-align: center;
+    left      : -1.5rem;
+    top       : -1.5rem;
+  }
+
+  &__period {
+    height     : 5rem;
+    // box-shadow: 0 1px 0 1px $soft;
+    border     : 1px solid $soft;
+    border-left: none;
+
+    &.first {
+      border-left              : 1px solid $soft;
+      border-top-left-radius   : 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+
+      .timeline__label {
+        display: none;
+      }
+    }
+
+    &.last {
+      border-top-right-radius   : 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+
+  &__track {
+    display : flex;
+    position: relative;
+  }
+
+  &__event {
+    background   : $grey-20;
+    border       : 1px solid $grey;
+    border-radius: 0.25rem;
+    color        : $grey;
+    margin       : 0.5rem 0;
+    font-size    : $font-size-base;
+    font-weight  : $font-weight-bold;
+    line-height  : 4rem;
+    position     : absolute;
+    height       : 4rem;
+    left         : 0;
+    overflow     : hidden;
+    text-align   : center;
+    padding      : 0 0.25rem;
+    // transform    : translateX(4rem);
+    &--primary {
+      border-color    : $primary;
+      background-color: $primary-20;
+      color           : $primary;
+    }
+
+    &--dark,
+    &--secondary {
+      border-color    : $dark;
+      background-color: $dark-20;
+      color           : $dark;
+    }
+
+    &--success {
+      border-color    : $success;
+      background-color: $success-20;
+      color           : $success;
+    }
+
+    &--warning {
+      border-color    : $warning;
+      background-color: $warning-20;
+      color           : $warning;
+    }
+
+    &--danger {
+      border-color    : $danger;
+      background-color: $danger-20;
+      color           : $danger;
+    }
+
+    &--info {
+      border-color    : $info;
+      background-color: $info-20;
+      color           : $info;
+    }
+  }
 }
 // svg {
 //   width : 100%;

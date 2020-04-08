@@ -78,6 +78,12 @@ Router.map(function() {
       this.route('scatter');
       this.route('timeline');
     });
+    this.route('timeline', function() {
+      this.route('standard');
+      this.route('minutes');
+      this.route('days');
+      this.route('multiple');
+    });
   });
   this.route('docs', {
     path: '/'
@@ -102,6 +108,7 @@ Router.map(function() {
       this.route('pagination');
       this.route('cards');
       this.route('charts');
+      this.route('widgets');
     });
     this.route('info', function() {
       this.route('alerts');
