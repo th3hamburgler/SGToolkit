@@ -31,16 +31,19 @@
       /* global moment */
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.timeline').forEach(tl => {
-          const timelineStarts = tl.dataset.starts,
+          const scale = tl.dataset.scale ? tl.dataset.scale : 3,
+            timelineStarts = tl.dataset.starts,
             labelFormat = tl.dataset.periodLabelFormat,
             periodLength = tl.dataset.periodLength,
             totalPeriods = tl.dataset.totalPeriods,
             totalDuration = tl.dataset.duration, // total duration of entire timeline
             timelineInterval = tl.dataset.interval,
-            minsPerRem = periodLength/3; // mins per 1rem unit
+            minsPerRem = periodLength/scale; // mins per 1rem unit
 
 
           let time = moment(timelineStarts);
+
+
 
           for (var p = 0; p < totalPeriods; p++) {
 
@@ -48,7 +51,7 @@
               first = (p === 0 ? "first" : ""),
               last = (p === (totalPeriods - 1) ? "last" : "");
 
-            tl.insertAdjacentHTML('beforeend', `<div class="timeline__period ${first} ${last}"><div class="timeline__label">${label}</div></div>`);
+            let period = tl.insertAdjacentHTML('beforeend', `<div class="timeline__period ${first} ${last}" style="width:${scale}rem;"><div class="timeline__label">${label}</div></div>`);
 
             time.add(periodLength, 'm'); // add period duration in mins to running time
           }
