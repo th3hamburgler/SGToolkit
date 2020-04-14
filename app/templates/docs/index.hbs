@@ -3,7 +3,13 @@
     <h1 class="display-3 text-primary font-weight-light mb-0">Design System Quick Start</h1>
   </header>
 
-  <div class="mx-8">
+  <h3 class="text-primary  mb-4">Quick Links</h3>
+
+  <div class="mb-3 text-right">
+    <a href="#usage">Jump to usage instructions</a>
+  </div>
+
+  <div class="mb-8">
     <div class="row mb-4">
       <div class="col">
         <LinkTo @route="docs.brand.logo">
@@ -57,5 +63,49 @@
       </div>
     </div>
   </div>
+
+  <h3 class="text-primary mb-4" id="usage">Usage</h3>
+
+  <p>
+    This toolkit is built to be framework agnostic and extends the existing <a href="https://getbootstrap.com/docs/4.4/">Bootstrap 4</a> framework.
+  </p>
+  <h5>CSS</h5>
+  <p>
+    For the basic functionality you will need to include the css file file in your project.
+    <br>This is located at <CodeSnippet class="" @copy="/dist/assets/sgtoolkit.css">/dist/assets/sgtoolkit.css</CodeSnippet>.
+  </p>
+  <h5>Fonts</h5>
+  <p>
+    The toolkit uses the Siemens Gamesa font <i>Weissenhof Grotesk</i>.
+    <br>This font requires a licence so a suitable webfont version of this font should be included in your project.
+  </p>
+  <h5>Javascript</h5>
+  <p>
+    A number of seperate javascript files are available to use in your project depending on what componenets you are using.
+  </p>
+  <h6>Bootstrap Components</h6>
+  <p>The basic bootstrap js functionality can be added by including the jquery, popperjs and bootsrap.</p>
+  <p>
+    <code>
+      &lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.slim.min.js&quot;&gt;&lt;/script&gt;<br>
+      &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot;&gt;&lt;/script&gt;<br>
+      &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    </code>
+  </p>
+
+  <h6>Charts</h6>
+  <p>The charts in these docs use the <a href="https://www.chartjs.org/">ChartJS</a> library. This requires the chart.js script and <a href="https://momentjs.com/">momentjs</a> for date manipulation.</p>
+  <p>
+    <code>
+      &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js&quot;&gt;&lt;/script&gt;<br>
+      &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js&quot;&gt;&lt;/script&gt;
+    </code>
+  </p>
+
+  <h6>Timeline</h6>
+  <p>
+    The timeline component requries a custom js script to format timelines.
+    <br>This is located at <code>vendor/timeline.js</code> directory if this repo.
+  </p>
 
 </div>
