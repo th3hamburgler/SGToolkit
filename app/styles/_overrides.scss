@@ -1,0 +1,146 @@
+/* Colors */
+$blue: #004A72;
+$indigo: #001772;
+$purple: #321850;
+$pink: #C50056;
+$red: #FF0000;
+$orange: #FF6D00;
+$yellow: #FAB601;
+$green: #9ABA00;
+$teal: #8BEAD8;
+$cyan: #12ADAD;
+$dark: #3C3C3C;
+$grey: #878787;
+$soft: #C6C6C6;
+$light: #F4F4F4;
+/* */
+$primary: $purple;
+$success: $green;
+$secondary: $dark;
+$info: $cyan;
+$warning: $yellow;
+/* */
+$grey-80: #9F9F9F;
+$grey-60: #B7B7B7;
+$grey-40: #CFCFCF;
+$grey-20: #E7E7E7;
+/* */
+$soft-80: #D1D1D1;
+$soft-60: #DDDDDD;
+$soft-40: #E3E3E3;
+$soft-20: #EEEEEE;
+/* */
+$dark-80: #636363;
+$dark-60: #8A8A8A;
+$dark-40: #B1B1B1;
+$dark-20: #D8D8D8;
+/* */
+$primary-80: #5A4673;
+$primary-60: #847496;
+$primary-40: #ADA3B9;
+$primary-20: #D6D1DC;
+$primary-10: #EBE8EE;
+/* */
+$success-80: #aec833;
+$success-60: #c2d666;
+$success-40: #d7e399;
+$success-20: #ebf1cc;
+/* */
+$warning-80: #fbc534;
+$warning-60: #fcd367;
+$warning-40: #fde299;
+$warning-20: #fef0cc;
+/* */
+$danger-80: #ff3333;
+$danger-60: #ff6666;
+$danger-40: #ff9999;
+$danger-20: #ffcccc;
+/* */
+$info-80: #34BEBC;
+$info-60: #65CFCF;
+$info-40: #99DFDE;
+$info-20: #CCEEEE;
+/* */
+$warning-80: #F9C532;
+$warning-60: #FBD266;
+$warning-40: #FCE199;
+$warning-20: #FDEFCD;
+/* */
+$theme-colors: (
+  "soft"      : $soft,
+  "soft-80"   : $soft-80,
+  "soft-60"   : $soft-60,
+  "soft-40"   : $soft-40,
+  "soft-20"   : $soft-20,
+  "grey"      : $grey,
+  "grey-80"   : $grey-80,
+  "grey-60"   : $grey-60,
+  "grey-40"   : $grey-40,
+  "grey-20"   : $grey-20,
+  "primary-80": $primary-80,
+  "primary-60": $primary-60,
+  "primary-40": $primary-40,
+  "primary-20": $primary-20,
+  "primary-10": $primary-10,
+  "dark-80"   : $dark-80,
+  "dark-60"   : $dark-60,
+  "dark-40"   : $dark-40,
+  "dark-20"   : $dark-20,
+  "info-80"   : $info-80,
+  "info-60"   : $info-60,
+  "info-40"   : $info-40,
+  "info-20"   : $info-20,
+  "warning-80": $warning-80,
+  "warning-60": $warning-60,
+  "warning-40": $warning-40,
+  "warning-20": $warning-20,
+  "blue"      : $blue,
+  "indigo"    : $indigo,
+  "purple"    : $purple,
+  "pink"      : $pink,
+  "red"       : $red,
+  "orange"    : $orange,
+  "yellow"    : $yellow,
+  "green"     : $green,
+  "teal"      : $teal,
+  "cyan"      : $cyan,
+);
+/* Typography */
+$font-family-sans-serif: "Weissenhof Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji';
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+/* --- */
+$display1-size: $font-size-base * 4.5;
+$display2-size: $font-size-base * 4.125;
+$display3-size: $font-size-base * 2.75;
+$display4-size: $font-size-base * 1.375;
+/* --- */
+$display1-weight: 700;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
+$display-line-height: $font-size-base * 5;
+/* --- */
+$small-font-size: $font-size-base * 0.875;
+/* --- */
+$spacer: 1rem;
+$spacers: (
+  6 : ($spacer * 3.5), // 56
+  7 : ($spacer * 4), // 64
+  8 : ($spacer * 4.5), // 72
+  9 : ($spacer * 5), // 80
+  10: ($spacer * 6), // 96
+  11: ($spacer * 7), // 112
+  12: ($spacer * 8), // 128
+  13: ($spacer * 9), // 144
+  14: ($spacer * 10), // 160
+);
+/* --- */
+$sizes: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+);
+$border-radius-lg: 0.5rem;

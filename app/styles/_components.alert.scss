@@ -1,0 +1,35 @@
+.alert {
+  &-dark {
+    background  : $dark;
+    border-color: $dark;
+    color       : $white;
+  }
+
+  &-primary {
+    background  : $primary;
+    border-color: $primary;
+    color       : $white;
+  }
+
+  &-success {
+    background  : $success;
+    border-color: $success;
+    color       : $white;
+  }
+
+  &-warning {
+    background  : $warning;
+    border-color: $warning;
+    color       : $white;
+  }
+
+  &-danger {
+    background  : $danger;
+    border-color: $danger;
+    color       : $white;
+  }
+
+  .alert-link {
+    color: $white;
+  }
+}

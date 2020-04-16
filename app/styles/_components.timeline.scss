@@ -1,0 +1,118 @@
+.timeline {
+  padding-top: 2rem;
+  overflow   : auto;
+  display    : flex;
+  min-height : 7rem;
+  position   : relative;
+
+  &--multiple {
+    flex-direction: column;
+  }
+
+  &__periods {}
+
+  &__periods {
+    // border       : 1px solid $soft;
+    // border-radius: 0.25rem;
+  }
+
+  &__label,
+  &__period {
+    flex-shrink: 0;
+  }
+
+  &__label {
+    font-size : $font-size-sm;
+    color     : $dark;
+    position  : relative;
+    text-align: center;
+    left      : -50%;
+    top       : -1.5rem;
+    width     : 100%;
+  }
+
+  &__period {
+    width      : 3rem;
+    height     : 5rem;
+    // box-shadow: 0 1px 0 1px $soft;
+    border     : 1px solid $soft;
+    border-left: none;
+    position   : relative;
+    z-index    : 1;
+
+    &.first {
+      border-left              : 1px solid $soft;
+      border-top-left-radius   : 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+
+      .timeline__label {
+        display: none;
+      }
+    }
+
+    &.last {
+      border-top-right-radius   : 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+
+  &__track {
+    display : flex;
+    position: relative;
+  }
+
+  &__event {
+    background   : $grey-20;
+    border       : 1px solid $grey;
+    border-radius: 0.25rem;
+    color        : $grey;
+    margin       : 0.5rem 0;
+    font-size    : $font-size-base;
+    font-weight  : $font-weight-bold;
+    line-height  : 4rem;
+    position     : absolute;
+    height       : 4rem;
+    left         : 0;
+    overflow     : hidden;
+    text-align   : center;
+    padding      : 0 0.25rem;
+    z-index      : 2;
+    // transform    : translateX(4rem);
+    &--primary {
+      border-color    : $primary;
+      background-color: $primary-20;
+      color           : $primary;
+    }
+
+    &--dark,
+    &--secondary {
+      border-color    : $dark;
+      background-color: $dark-20;
+      color           : $dark;
+    }
+
+    &--success {
+      border-color    : $success;
+      background-color: $success-20;
+      color           : $success;
+    }
+
+    &--warning {
+      border-color    : $warning;
+      background-color: $warning-20;
+      color           : $warning;
+    }
+
+    &--danger {
+      border-color    : $danger;
+      background-color: $danger-20;
+      color           : $danger;
+    }
+
+    &--info {
+      border-color    : $info;
+      background-color: $info-20;
+      color           : $info;
+    }
+  }
+}
