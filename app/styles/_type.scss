@@ -1,0 +1,48 @@
+.display-1 {
+  letter-spacing: -2px;
+}
+
+.display-2 {
+  letter-spacing: -2px;
+  line-height   : $font-size-base * 4.5;
+}
+
+.display-3 {
+  letter-spacing: -1.5px;
+  line-height   : $font-size-base * 4;
+}
+
+.display-4 {
+  letter-spacing: -1px;
+  line-height   : $font-size-base * 1.5;
+}
+// add responsive rounded border utilities
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    // Type display classes
+    .display#{$infix}-1 {
+      @include font-size($display1-size);
+      font-weight: $display1-weight;
+      line-height: $display-line-height;
+    }
+
+    .display#{$infix}-2 {
+      @include font-size($display2-size);
+      font-weight: $display2-weight;
+      line-height: $font-size-base * 4.5;
+    }
+
+    .display#{$infix}-3 {
+      @include font-size($display3-size);
+      font-weight: $display3-weight;
+      line-height: $font-size-base * 4;
+    }
+
+    .display#{$infix}-4 {
+      @include font-size($display4-size);
+      font-weight: $display4-weight;
+      line-height: $font-size-base * 1.5;
+    }
+  }
+}

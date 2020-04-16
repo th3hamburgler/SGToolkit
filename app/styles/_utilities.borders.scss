@@ -1,0 +1,37 @@
+// add responsive rounded border utilities
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    .rounded#{$infix}-sm {
+      border-radius: $border-radius-sm !important;
+    }
+
+    .rounded#{$infix} {
+      border-radius: $border-radius !important;
+    }
+
+    .rounded#{$infix}-top {
+      border-top-left-radius : $border-radius !important;
+      border-top-right-radius: $border-radius !important;
+    }
+
+    .rounded#{$infix}-right {
+      border-top-right-radius   : $border-radius !important;
+      border-bottom-right-radius: $border-radius !important;
+    }
+
+    .rounded#{$infix}-bottom {
+      border-bottom-right-radius: $border-radius !important;
+      border-bottom-left-radius : $border-radius !important;
+    }
+
+    .rounded#{$infix}-left {
+      border-top-left-radius   : $border-radius !important;
+      border-bottom-left-radius: $border-radius !important;
+    }
+
+    .rounded#{$infix}-lg {
+      border-radius: $border-radius-lg !important;
+    }
+  }
+}

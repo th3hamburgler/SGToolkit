@@ -84,6 +84,13 @@ Router.map(function() {
       this.route('days');
       this.route('multiple');
     });
+
+    this.route('layouts', function() {
+      this.route('login');
+      this.route('prefrences');
+      this.route('booking');
+      this.route('dashboard');
+    });
   });
   this.route('docs', {
     path: '/'
@@ -114,8 +121,6 @@ Router.map(function() {
       this.route('alerts');
       this.route('errors');
     });
-    this.route('layouts', function() {
-      this.route('login');
-    });
+    this.route('layouts');
   });
 });

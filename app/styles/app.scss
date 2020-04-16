@@ -134,6 +134,7 @@ $spacers: (
   11: ($spacer * 7), // 112
   12: ($spacer * 8), // 128
   13: ($spacer * 9), // 144
+  14: ($spacer * 10), // 160
 );
 /* --- */
 $sizes: (
@@ -144,27 +145,9 @@ $sizes: (
   4: ($spacer * 1.5),
   5: ($spacer * 3)
 );
+$border-radius-lg: 0.5rem;
 /* --- */
 @import "ember-bootstrap/bootstrap";
-
-.display-1 {
-  letter-spacing: -2px;
-}
-
-.display-2 {
-  letter-spacing: -2px;
-  line-height   : $font-size-base * 4.5;
-}
-
-.display-3 {
-  letter-spacing: -1.5px;
-  line-height   : $font-size-base * 4;
-}
-
-.display-4 {
-  letter-spacing: -1px;
-  line-height   : $font-size-base * 1.5;
-}
 
 .info-detail {
   border-left : 4px solid $yellow;
@@ -176,10 +159,15 @@ $sizes: (
 
 .btn {
   min-width: 9rem;
+  max-width: 25rem;
 }
 
 .btn-sm {
   min-width: 0;
+}
+
+.btn-link {
+  text-decoration: underline;
 }
 
 .alert {
@@ -224,6 +212,13 @@ $sizes: (
 
 .form-group {
   max-width: 25rem;
+}
+
+.navbar-brand {
+  font-size     : 1.375rem;
+  line-height   : 2.75rem;
+  padding       : 0;
+  letter-spacing: -0.5px;
 }
 
 .cursor-pointer {
@@ -515,8 +510,54 @@ html {
     }
   }
 }
-// svg {
-//   width : 100%;
-//   height: auto;
-// }
-// @import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css";
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+@import "type";
+@import "utilities.background";
+@import "utilities.borders";

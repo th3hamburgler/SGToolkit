@@ -106,15 +106,16 @@ export default Controller.extend({
             icon: 'icon.errors',
           },
         ],
-      }, {
-        title: 'Layouts',
-        route: 'docs.layouts',
-        items: [{
-          title: 'Login',
-          route: 'docs.layouts.login',
-          icon: 'icon.login.register',
-        }, ],
       },
+      /*{
+             title: 'Layouts',
+             route: 'docs.layouts',
+             items: [{
+               title: 'Login',
+               route: 'docs.layouts.login',
+               icon: 'icon.login.register',
+             }, ],
+           },*/
     ]
   },
 });
