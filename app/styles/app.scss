@@ -4,6 +4,7 @@ $ember-resizable-resizer-size: 24px;
 /* --- */
 @import "ember-bootstrap/bootstrap";
 /* --- */
+@import "app-structure";
 @import "type";
 /* --- */
 @import "components.alert";
@@ -11,7 +12,7 @@ $ember-resizable-resizer-size: 24px;
 @import "components.demo";
 @import "components.grid";
 @import "components.info-detail";
-@import "components.styledguide";
+@import "components.styleguide";
 @import "components.timeline";
 @import "components.toasts";
 /* --- */
@@ -25,6 +26,10 @@ $ember-resizable-resizer-size: 24px;
 
 .form-group {
   max-width: 25rem;
+}
+
+.navbar {
+  width: 100%;
 }
 
 .navbar-brand {

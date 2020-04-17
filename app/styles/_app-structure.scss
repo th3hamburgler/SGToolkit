@@ -1,0 +1,19 @@
+//
+// Various helper classes for common app layout structures
+
+.app-container {
+  display        : flex;
+  flex-direction : column;
+  justify-content: start;
+  min-height     : 100vh;
+  min-width      : 100%;
+}
+
+.app-body {
+  display       : flex;
+  flex          : 1 1 auto;
+  flex-direction: column;
+  min-width     : 100%;
+}
+
+.app-footer {}
