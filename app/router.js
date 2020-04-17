@@ -87,7 +87,7 @@ Router.map(function() {
 
     this.route('layouts', function() {
       this.route('login');
-      this.route('prefrences');
+      this.route('preferences');
       this.route('booking');
       this.route('dashboard');
     });

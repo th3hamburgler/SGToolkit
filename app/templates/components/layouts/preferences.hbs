@@ -1,9 +1,92 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="app-container bg-white bg-sm-info-20">
 
-  {{svg-jar "logo" class="mr-3"}}
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
 
-  <div class="navbar-brand text-primary-80">
-    App Name
+    {{svg-jar "logo" class="mr-3" style="max-width:50%"}}
+
+    <div class="navbar-brand text-primary-80 d-none d-sm-block">
+      App Name
+    </div>
+
+  </nav>
+
+  <div class="app-body justify-content-start justify-content-sm-center">
+
+    <div class="container w-md-75 w-lg-50 my-sm-6">
+      <div class="row bg-white rounded-md-lg overflow-hidden">
+        <div class="col-sm p-4 p-md-6">
+          <h1 class="mb-4 mb-md-6 display-3 text-info text-left text-md-center font-weight-bold">Update your preferences</h1>
+
+          <h2 class="display-4">Instructions</h2>
+
+          <p class="text-dark-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua. </p>
+
+          <h2 class="display-4">Your Details</h2>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Sam">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="work-email">Work Email Address</label>
+                <input type="email" class="form-control" id="work-email" placeholder="">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="work-mobile">Work Mobile Number</label>
+                <input type="phone" class="form-control" id="work-mobile" placeholder="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="department">Department</label>
+                <select id="department" class="form-control">
+                  <option>Planning</option>
+                  <option selected>Production</option>
+                  <option>Sales</option>
+                  <option>Testing</option>
+                  <option>Training</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="bg-light p-4 mb-3 rounded-lg">
+              <h2 class="display-4">Update Your Password</h2>
+              <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" class="form-control" id="current-password" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" class="form-control" id="new-password" placeholder="">
+              </div>
+              <footer class="text-right">
+                <button type="submit" class="btn btn-outline-primary">Update Password</button>
+              </footer>
+            </div>
+
+            <footer class="text-center">
+              <button type="submit" class="btn btn-primary btn-only-block">Save Details</button>
+            </footer>
+          </form>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm pt-3">
+          <p class="text-center text-primary mx-auto">2020 - Siemens Gamesa</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-</nav>
+</div>

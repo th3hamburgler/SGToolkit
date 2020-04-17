@@ -10,3 +10,18 @@
 .btn-link {
   text-decoration: underline;
 }
+// add responsive sizing utilities
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-down($breakpoint) {
+    .btn#{$infix}-only-block {
+      display  : block;
+      width    : 100%;
+      max-width: none;
+      // Vertically space out multiple block buttons
+      + .btn-block {
+        margin-top: $btn-block-spacing-y;
+      }
+    }
+  }
+}
