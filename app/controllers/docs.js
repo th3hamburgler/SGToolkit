@@ -107,15 +107,15 @@ export default Controller.extend({
           },
         ],
       },
-      /*{
-             title: 'Layouts',
-             route: 'docs.layouts',
-             items: [{
-               title: 'Login',
-               route: 'docs.layouts.login',
-               icon: 'icon.login.register',
-             }, ],
-           },*/
+      {
+        title: 'Layouts',
+        route: 'docs.layouts',
+        items: [{
+          title: 'Booking App',
+          route: 'docs.layouts',
+          icon: 'icon.login.register',
+        }, ],
+      },
     ]
   },
 });
