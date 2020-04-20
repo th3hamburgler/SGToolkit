@@ -26,13 +26,13 @@
 
     &:disabled + .form-check-label {
       border-color: $danger;
-      background  : $danger-20;
+      background  : $danger-20!important;
       color       : $danger;
       cursor      : not-allowed;
     }
 
     &:checked + .form-check-label {
-      background  : $info;
+      background  : $info!important;
       border-color: $info;
       color       : $white;
     }

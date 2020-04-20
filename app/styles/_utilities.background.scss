@@ -7,3 +7,88 @@
     }
   }
 }
+// add some responsive background css properties
+$background-attachments: (
+  fixed : fixed,
+  local : local,
+  scroll: scroll
+);
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $abbrev, $value in $background-attachments {
+    @include media-breakpoint-up($breakpoint) {
+      .bg#{$infix}-#{$abbrev} {
+        background-attachment: $value;
+      }
+    }
+  }
+}
+//
+$background-positions: (
+  bottom      : bottom,
+  center      : center,
+  left        : left,
+  left-bottom : left bottom,
+  left-top    : left top,
+  right       : right,
+  right-bottom: right bottom,
+  right-top   : right top,
+  top         : top,
+);
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $abbrev, $value in $background-positions {
+    @include media-breakpoint-up($breakpoint) {
+      .bg#{$infix}-#{$abbrev} {
+        background-position: $value;
+      }
+    }
+  }
+}
+//
+$background-sizes: (
+  auto   : auto,
+  cover  : cover,
+  contain: contain,
+  h-25   : auto 25%,
+  h-50   : auto 50%,
+  h-75   : auto 75%,
+  h-100  : auto 100%,
+  w-25   : 25% auto,
+  w-50   : 50% auto,
+  w-75   : 75% auto,
+  w-100  : 100% auto,
+); // @each $abbrev, $value in $background-sizes {
+//   .bg-#{$abbrev} {
+//     background-size: $value;
+//   }
+// }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $abbrev, $value in $background-sizes {
+    @include media-breakpoint-up($breakpoint) {
+      .bg#{$infix}-#{$abbrev} {
+        background-size: $value;
+      }
+    }
+  }
+}
+//
+$background-repeats: (
+  repeat      : repeat,
+  no-repeat   : no-repeat,
+  repeat-x    : repeat-x,
+  repeat-y    : repeat-y,
+  repeat-round: repeat-round,
+  repeat-space: repeat-space,
+);
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $abbrev, $value in $background-repeats {
+    @include media-breakpoint-up($breakpoint) {
+      .bg#{$infix}-#{$abbrev} {
+        background-repeat: $value;
+      }
+    }
+  }
+}
