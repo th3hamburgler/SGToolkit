@@ -13,6 +13,7 @@ $dark: #3C3C3C;
 $grey: #878787;
 $soft: #C6C6C6;
 $light: #F4F4F4;
+$white: #FFF;
 /* */
 $primary: $purple;
 $success: $green;
@@ -115,6 +116,7 @@ $theme-colors: (
   "green"     : $green,
   "teal"      : $teal,
   "cyan"      : $cyan,
+  "white"     : $white,
 );
 $body-color: $dark;
 /* Typography */

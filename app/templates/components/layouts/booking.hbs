@@ -1,9 +1,377 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="app-container bg-white">
 
-  {{svg-jar "logo" class="mr-3"}}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-  <div class="navbar-brand text-primary-80">
-    App Name
+    {{svg-jar "logo" class="mr-3"}}
+
+    <div class="navbar-brand text-primary-80">
+      App Name
+    </div>
+
+  </nav>
+
+  <div class="app-body">
+
+    <header class="bg-info-20">
+      <div class="container">
+        <div class="row">
+          <div class="col py-6" style="background: url(/images/illustration.login.png) bottom right no-repeat; background-size:contain;">
+            <h1 class="display-3 display-md-1 text-info text-left font-weight-bold mb-3">Crane<br> Bookings</h1>
+            <button type="button" class="btn btn-primary">New Booking</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-3">
+      <form class="p-3">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col">
+              <label for="segment" class="text-primary font-weight-bold">Select a segment:</label>
+              <div class="row">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="segment" id="segment1" value="Segment 1" checked>
+                    <label class="form-check-label" for="segment1">Segment 1</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="segment" id="segment2" value="Segment 2">
+                    <label class="form-check-label" for="segment2">Segment 2</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="segment" id="segment3" value="Segment 3">
+                    <label class="form-check-label" for="segment3">Segment 3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="crane" class="text-primary font-weight-bold">Choose a crane type:</label>
+              <div class="row">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="crane" id="crane1" value="Segment 1" disabled>
+                    <label class="form-check-label" for="crane1">Crane 1</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="crane" id="crane2" value="Segment 2">
+                    <label class="form-check-label" for="crane2">Crane 2</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="crane" id="crane3" value="Segment 3" checked>
+                    <label class="form-check-label" for="crane3">Crane 3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="proceedure" class="text-primary font-weight-bold">Work proceedure:</label>
+              <div class="row">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="proceedure" id="proceedure1" value="Proceedure 1">
+                    <label class="form-check-label" for="proceedure1">Proceedure 1</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="proceedure" id="proceedure2" value="Proceedure 2">
+                    <label class="form-check-label" for="proceedure2">Proceedure 2</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="proceedure" id="proceedure3" value="Proceedure 3">
+                    <label class="form-check-label" for="proceedure3">Proceedure 3</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="proceedure" id="proceedure4" value="Proceedure 4" checked>
+                    <label class="form-check-label" for="proceedure4">Proceedure 4</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="location" class="text-primary font-weight-bold">Location:</label>
+              <div class="row">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="location" id="location1" value="East 1" checked>
+                    <label class="form-check-label" for="location1">East 1</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="location" id="location2" value="East 2">
+                    <label class="form-check-label" for="location2">East 2</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="location" id="location3" value="West 1">
+                    <label class="form-check-label" for="location3">West 1</label>
+                  </div>
+                </div>
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="form-check form-check-stylised">
+                    <input class="form-check-input" type="radio" name="location" id="location4" value="West 2">
+                    <label class="form-check-label" for="location4">West 2</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="day" class="text-primary font-weight-bold">Select a day:</label>
+              <small class="form-text text-danger">*Cranes are reserved for training and maintenance on Sundays</small>
+              <div class="p-3 pb-1 bg-light rounded">
+                <div class="row">
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day1" value="Monday">
+                      <label class="form-check-label bg-white" for="day1">Monday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day2" value="Tuesday">
+                      <label class="form-check-label bg-white" for="day2">Tuesday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day3" value="Wednesday">
+                      <label class="form-check-label bg-white" for="day3">Wednesday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day4" value="Thursday">
+                      <label class="form-check-label bg-white" for="day4">Thursday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day5" value="Friday">
+                      <label class="form-check-label bg-white" for="day5">Friday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day6" value="Saturday">
+                      <label class="form-check-label bg-white" for="day6">Saturday</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-2">
+                    <div class="form-check form-check-stylised py-2 my-2">
+                      <input class="form-check-input" type="radio" name="day" id="day7" value="Sunday">
+                      <label class="form-check-label bg-white" for="day7">Sunday</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="time" class="text-primary font-weight-bold">Book a time:</label>
+              <small class="form-text text-muted">*Bookings require a 2 hour slot</small>
+              <div class="p-3 bg-light rounded">
+                <div class="text-center mt-2 mb-3">
+                  <div class="btn-group flex-wrap" role="group" aria-label="Time of Day">
+                    <button type="button" class="btn btn-primary">Morning</button>
+                    <button type="button" class="btn btn-white">Afternoon</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">00:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">00:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">00:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">00:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">01:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">01:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">01:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">01:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">02:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">02:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">02:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">02:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-warning text-center py-2 my-2">03:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">03:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">03:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">03:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">04:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">04:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">04:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">04:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">05:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">05:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">05:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">05:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">06:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">06:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">06:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">06:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">07:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">07:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">07:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">07:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">08:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">08:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">08:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">08:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">09:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">09:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">09:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">09:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">10:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">10:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">10:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">10:45</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">11:00</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">11:15</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">11:30</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="rounded bg-white text-center py-2 my-2">11:45</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <aside class="bg-info-20 p-3 rounded">
+                <h2 class="display-4 display-sm-3 text-info text-left font-weight-bold mb-3">Your Booking</h2>
+                <p>
+                  Segment 1<br>
+                  Root<br>
+                  Mandrell Pull<br>
+                  East 1<br>
+                  Monday 1<br>
+                  00:15 - 02:15<br>
+                </p>
+                <button type="button" class="btn btn-info btn-only-block">Confirm Button</button>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
   </div>
 
-</nav>
+</div>
