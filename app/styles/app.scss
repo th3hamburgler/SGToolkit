@@ -21,9 +21,14 @@ $ember-resizable-resizer-size: 24px;
 @import "utilities.borders";
 @import "utilities.overflow";
 @import "utilities.sizing";
+@import "utilities.spacing";
 /* --- */
 .close {
   font-weight: normal;
+}
+
+.card-chart {
+  max-width: 100%;
 }
 
 .form-group {

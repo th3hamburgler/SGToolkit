@@ -1,9 +1,292 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+{{!-- BEGIN-SNIPPET dashboard-layout- --}}
+<div class="app-container bg-light">
 
-  {{svg-jar "logo" class="mr-3"}}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-  <div class="navbar-brand text-primary-80">
-    App Name
+    {{svg-jar "logo" class="mr-3"}}
+
+    <div class="navbar-brand text-primary-80">
+      App Name
+    </div>
+
+  </nav>
+
+  <div class="app-body">
+
+    <header class="bg-info-20">
+      <div class="container">
+        <div class="bg-w-50 bg-sm-h-75 bg-no-repeat bg-right-bottom bg-sm-right" style="background-image: url(/images/illustration.png)">
+          <div class="row py-6 my-sm-0">
+            <div class="col-sm-6 col-md-8 py-md-6">
+              <h1 class="display-3 display-md-1 mb-3 text-info text-left font-weight-bold">Crane Statistics</h1>
+            </div>
+            <div class="col-sm-6 col-md-4 py-md-6 d-flex align-items-center">
+              <select class="form-control mb-3" id="select">
+                <option>January 2020</option>
+                <option>February 2020</option>
+                <option>March 2020</option>
+                <option>April 2020</option>
+                <option>May 2020</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-n3 mt-sm-n5">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md flex-grow-1 d-flex">
+            <div class="card mb-3 flex-grow-1">
+              <div class="card-body">
+                <h5 class="card-title">When are the cranes mostly requested</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <canvas class="card-chart" id="crane-requests"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md flex-grow-1 d-flex">
+            <div class="card mb-3 flex-grow-1">
+              <div class="card-body">
+                <h5 class="card-title">Crane run over time</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <canvas class="card-chart" id="crane-run-over"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">When are the cranes mostly requested</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <canvas class="card-chart" id="crane-requested"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md flex-grow-1 d-flex">
+            <div class="card mb-3 flex-grow-1">
+              <div class="card-body">
+                <h5 class="card-title">Team requests</h5>
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Team</th>
+                      <th scope="col">Segment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Segment 3</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Segment 3</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>Segment 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md flex-grow-1 d-flex">
+            <div class="card mb-3 flex-grow-1">
+              <div class="card-body">
+                <h5 class="card-title">Save document as PDF</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-info">Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <canvas class="card-chart" id="capacity-over-time"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
   </div>
 
-</nav>
+</div>
+
+<script>
+  // Crane Request Chart
+  (function() {
+    const ctx = document.getElementById('crane-requests'),
+      data = {
+        labels: ["AM Morning", "PM Afternoon"],
+        datasets: [{
+          backgroundColor: ["#12ADAD", "#321850"],
+          borderWidth: 0,
+          data: [64, 36]
+        }]
+      },
+      options = {
+
+      };
+
+    let mypieChart = new Chart(ctx, {
+      type: 'doughnut',
+      data,
+      options
+    });
+  })();
+
+  // Crane run over time
+  (function() {
+    const ctx = document.getElementById('crane-run-over'),
+      data = {
+        labels: ["Active", "Inactive"],
+        datasets: [{
+          backgroundColor: ["#12ADAD", "#CCEEEE"],
+          borderWidth: 0,
+          data: [4, 96]
+        }]
+      },
+      options = {
+        cutoutPercentage: 90,
+        elements: {
+          center: {
+            text: '4%',
+            color: '#12ADAD', // Default is #000000
+            fontStyle: 'Weissenhof Grotesk', // Default is Arial
+            sidePadding: 50 // Defualt is 20 (as a percentage)
+          }
+        }
+      };
+
+    let myringChart = new Chart(ctx, {
+      type: 'doughnut',
+      data,
+      options
+    });
+  })();
+
+  // Cranes requesed
+  (function() {
+    const ctx = document.getElementById('crane-requested'),
+      data = {
+        labels: ["Segment 1", "Segment 2", "Segment 3"],
+        datasets: [{
+          label: "",
+          backgroundColor: "#12ADAD",
+          data: [10, 20, 70],
+        }]
+      },
+      options = {
+        legend: {
+          display: false,
+        },
+        title: {
+          display: false,
+        },
+        scales: {
+          yAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+            ticks: {
+              beginAtZero: true,
+              suggestedMax: 100,
+            },
+            scaleLabel: {
+              labelString: "Percentage %",
+              display: true,
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            },
+            scaleLabel: {
+              labelString: "Segment",
+              display: true,
+            }
+          }]
+        }
+
+      };
+
+    let myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data,
+      options
+    });
+  })();
+  // Capacity over time
+  (function() {
+
+    const ctx = document.getElementById('capacity-over-time'),
+      data = {
+        labels: ["", "Week 1", "", "Week 2", "", "Week 3", "", "Week 4", "", ],
+        datasets: [{
+          label: "June",
+          backgroundColor: "transparent",
+          borderWidth: 2,
+          borderColor: "#FAB601",
+          data: [67, 42, 48, 59, 63, 45, 53, 23, 33],
+          lineTension: 0,
+          pointBackgroundColor: "#FAB601",
+          pointRadius: 2,
+        }, {
+          label: "July",
+          backgroundColor: "transparent",
+          borderWidth: 2,
+          borderColor: "#C6C6C6",
+          data: [44, 24, 25, 36, 41, 44, 35, 36, 25],
+          lineTension: 0,
+          pointBackgroundColor: "#C6C6C6",
+          pointRadius: 2,
+        }, ]
+      },
+      options = {
+        title: {
+          display: true,
+          text: 'Hours lost to sickness per month'
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false
+            }
+          }],
+          yAxes: [{
+            stacked: false,
+            gridLines: {
+              drawOnChartArea: false
+            }
+          }]
+        }
+      };
+
+    let myLineChart = new Chart(ctx, {
+      type: 'line',
+      data,
+      options
+    });
+  })();
+</script>
+
+{{!-- END-SNIPPET --}}

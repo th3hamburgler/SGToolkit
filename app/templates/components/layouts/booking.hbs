@@ -1,3 +1,4 @@
+{{!-- BEGIN-SNIPPET booking-layout --}}
 <div class="app-container bg-white">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -13,9 +14,11 @@
   <div class="app-body">
 
     <header class="bg-info-20">
-      <div class="col py-3 py-md-6 bg-w-50 bg-sm-h-75 bg-no-repeat bg-right-bottom bg-sm-right" style="background-image: url(/images/illustration.png)">
-        <h1 class="display-3 display-md-1 text-info text-left font-weight-bold mb-3">Crane<br> Bookings</h1>
-        <button type="button" class="btn btn-primary">New Booking</button>
+      <div class="container">
+        <div class="py-3 py-md-6 bg-w-50 bg-sm-h-75 bg-no-repeat bg-right-bottom bg-sm-right" style="background-image: url(/images/illustration.png)">
+          <h1 class="display-3 display-md-1 text-info text-left font-weight-bold mb-3">Crane<br> Bookings</h1>
+          <button type="button" class="btn btn-primary">New Booking</button>
+        </div>
       </div>
     </header>
 
@@ -76,25 +79,25 @@
             <div class="col">
               <label for="proceedure" class="text-primary font-weight-bold">Work proceedure:</label>
               <div class="row">
-                <div class="col-sm mb-2 mb-sm-0">
+                <div class="col-sm-6 col-md-3 mb-2 mb-md-0">
                   <div class="form-check form-check-stylised">
                     <input class="form-check-input" type="radio" name="proceedure" id="proceedure1" value="Proceedure 1">
                     <label class="form-check-label" for="proceedure1">Proceedure 1</label>
                   </div>
                 </div>
-                <div class="col-sm mb-2 mb-sm-0">
+                <div class="col-sm-6 col-md-3 mb-2 mb-md-0">
                   <div class="form-check form-check-stylised">
                     <input class="form-check-input" type="radio" name="proceedure" id="proceedure2" value="Proceedure 2">
                     <label class="form-check-label" for="proceedure2">Proceedure 2</label>
                   </div>
                 </div>
-                <div class="col-sm mb-2 mb-sm-0">
+                <div class="col-sm-6 col-md-3 mb-2 mb-md-0">
                   <div class="form-check form-check-stylised">
                     <input class="form-check-input" type="radio" name="proceedure" id="proceedure3" value="Proceedure 3">
                     <label class="form-check-label" for="proceedure3">Proceedure 3</label>
                   </div>
                 </div>
-                <div class="col-sm mb-2 mb-sm-0">
+                <div class="col-sm-6 col-md-3 mb-2 mb-md-0">
                   <div class="form-check form-check-stylised">
                     <input class="form-check-input" type="radio" name="proceedure" id="proceedure4" value="Proceedure 4" checked>
                     <label class="form-check-label" for="proceedure4">Proceedure 4</label>
@@ -371,3 +374,4 @@
   </div>
 
 </div>
+{{!-- END-SNIPPET --}}

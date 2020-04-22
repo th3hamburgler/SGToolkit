@@ -119,6 +119,12 @@ $theme-colors: (
   "white"     : $white,
 );
 $body-color: $dark;
+$table-dark-color: $white;
+$table-dark-bg: $primary;
+$table-dark-accent-bg: rgba($white, .05);
+$table-dark-hover-color: $table-dark-color;
+$table-dark-hover-bg: rgba($white, .075);
+$table-dark-border-color: $primary-80;
 /* Typography */
 $font-family-sans-serif: "Weissenhof Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji';
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`

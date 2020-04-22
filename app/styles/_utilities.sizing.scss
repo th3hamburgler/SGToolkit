@@ -7,6 +7,14 @@
         .#{$abbrev}#{$infix}-#{$size} {
           #{$prop}: $length !important;
         }
+
+        .max-#{$abbrev}#{$infix}-#{$size} {
+          max-#{$prop}: $length !important;
+        }
+
+        .min-#{$abbrev}#{$infix}-#{$size} {
+          min-#{$prop}: $length !important;
+        }
       }
     }
 
