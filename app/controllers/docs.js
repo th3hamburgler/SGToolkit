@@ -60,7 +60,7 @@ export default Controller.extend({
           {
             title: 'Images',
             route: 'docs.general.images',
-            icon: 'icon.logo',
+            icon: 'icon.image',
           },
         ]
       },
@@ -70,11 +70,11 @@ export default Controller.extend({
         items: [{
             title: 'Lists',
             route: 'docs.components.lists',
-            icon: 'icon.logo',
+            icon: 'icon.list',
           }, {
             title: 'Pagination',
             route: 'docs.components.pagination',
-            icon: 'icon.logo',
+            icon: 'icon.pagination',
           },
           {
             title: 'Cards',
@@ -89,7 +89,7 @@ export default Controller.extend({
           {
             title: 'Widgets',
             route: 'docs.components.widgets',
-            icon: 'icon.charts',
+            icon: 'icon.widgets',
           },
         ],
       }, {
@@ -98,7 +98,7 @@ export default Controller.extend({
         items: [{
             title: 'Alerts',
             route: 'docs.info.alerts',
-            icon: 'icon.logo',
+            icon: 'icon.alerts',
           },
           {
             title: 'Errors',
