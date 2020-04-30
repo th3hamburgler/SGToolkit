@@ -3,6 +3,8 @@
     <h1 class="display-3 text-primary font-weight-light mb-0">Icons</h1>
   </header>
 
+  <p>All icons are in svg format and can be found in the <code>/public/svg/</code> directory of this repo.</p>
+
   <table class="table table-hover table-responsive-sm">
     <tr>
       <th>Icon</th>
@@ -10,7 +12,7 @@
     </tr>
     {{#each icons as |icon|}}
       <tr>
-        <td>{{svg-jar icon style="height:42px; width:42px;"}}</td>
+        <td>{{svg-jar icon class="w-10 h-10"}}</td>
         <td>{{icon}}</td>
       </tr>
     {{/each}}
