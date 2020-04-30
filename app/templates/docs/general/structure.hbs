@@ -3,5 +3,144 @@
     <h1 class="display-3 text-primary font-weight-light mb-0">Structure</h1>
   </header>
 
-  <p>Content todo</p>
+  <p>The toolkit extends Bootstraps existing utility classes to allow control of spacing and sizes of your applications.</p>
+
+  <p>The toolkit is based on an 8px (.5rem) grid, the utilities provide size steps inline with this grid.</p>
+
+  <h2 class="display-6">Spacing</h2>
+
+  <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+
+  <h3 class="display-5">How it works</h3>
+  <p>
+    Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a
+    default Sass map ranging from .25rem to 3rem.
+  </p>
+
+  <h3 class="display-5">Notation</h3>
+
+  <p>Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints,
+    however, do include a breakpoint abbreviation.</p>
+
+  <p>The classes are named using the format <code>{property}{sides}-{size}</code> for xs and <code>{property}{sides}-{breakpoint}-{size}</code> for sm, md, lg, and xl.</p>
+
+  <p>
+    Where property is one of:
+  </p>
+
+  <ul>
+    <li>m - for classes that set margin</li>
+    <li>p - for classes that set padding</li>
+  </ul>
+
+  <p>Where sides is one of:</p>
+
+  <ul>
+    <li>t - for classes that set margin-top or padding-top</li>
+    <li>b - for classes that set margin-bottom or padding-bottom</li>
+    <li>l - for classes that set margin-left or padding-left</li>
+    <li>r - for classes that set margin-right or padding-right</li>
+    <li>x - for classes that set both *-left and *-right</li>
+    <li>y - for classes that set both *-top and *-bottom</li>
+    <li>blank - for classes that set a margin or padding on all 4 sides of the element</li>
+  </ul>
+
+  <p>
+    Where size is one of:
+  </p>
+
+  <table class="table table-hover table-responsive-sm">
+    <thead>
+      <tr>
+        <th scope="col">Modifier</th>
+        <th scope="col">Pixels</th>
+        <th scope="col">Rems</th>
+        <th scope="col">Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each spacers as |space|}}
+        <tr>
+          <th scope="row">{{space.mod}}</th>
+          <td>{{mult space.scale 16}}px</td>
+          <td>{{space.scale}}rem</td>
+          <td>.m-{{space.mod}} .pt-{{space.mod}}</td>
+        </tr>
+      {{/each}}
+      <tr>
+        <th scope="row">auto</th>
+        <td>auto</td>
+        <td>auto</td>
+        <td>.m-auto</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2 class="display-4">Sizing</h2>
+
+  <p>Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.</p>
+
+  <p>The classes are named using the format <code>{property}-{size}</code> for xs and <code>{property}-{breakpoint}-{size}</code> for sm, md, lg, and xl.</p>
+
+  <p>
+    Where property is one of:
+  </p>
+
+  <ul>
+    <li>w - for classes that set width</li>
+    <li>h - for classes that set height</li>
+  </ul>
+
+  <table class="table table-hover table-responsive-sm">
+    <thead>
+      <tr>
+        <th scope="col">Modifier</th>
+        <th scope="col">Pixels</th>
+        <th scope="col">Rems</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each sizes as |size|}}
+        <tr>
+          <th scope="row">{{size.mod}}</th>
+          <td>{{mult size.scale 16}}px</td>
+          <td>{{size.scale}}rem</td>
+          <td>.w-{{size.mod}} .h-{{size.mod}}</td>
+        </tr>
+      {{/each}}
+      <tr>
+        <th scope="row">25</th>
+        <td>25%</td>
+        <td>25%</td>
+        <td>.w-25 .h-25</td>
+      </tr>
+      <tr>
+        <th scope="row">50</th>
+        <td>50%</td>
+        <td>50%</td>
+        <td>.w-50 .h-50</td>
+      </tr>
+      <tr>
+        <th scope="row">75</th>
+        <td>75%</td>
+        <td>75%</td>
+        <td>.w-75 .h-75</td>
+      </tr>
+      <tr>
+        <th scope="row">100</th>
+        <td>100%</td>
+        <td>100%</td>
+        <td>.w-100 .h-100</td>
+      </tr>
+      <tr>
+        <th scope="row">auto</th>
+        <td>auto</td>
+        <td>auto</td>
+        <td>.w-auto .h-auto</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
