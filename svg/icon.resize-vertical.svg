@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 30 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>resize copyicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Brand---Iconography" transform="translate(-1185.000000, -796.000000)" stroke="#000000" stroke-width="4.8">
+            <g id="resize-copy" transform="translate(1200.000000, 833.000000) rotate(-45.000000) translate(-1200.000000, -833.000000) translate(1176.000000, 809.000000)">
+                <polyline id="Path" points="31.2 0 48 0 48 16.8"></polyline>
+                <line x1="46.4655" y1="1.53" x2="2.397" y2="45.603" id="Path"></line>
+                <polyline id="Path" points="16.8 48 0 48 0 31.2"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

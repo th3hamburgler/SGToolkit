@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>play-circle-outlineicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Brand---Iconography" transform="translate(-848.000000, -402.000000)">
+            <g id="play-circle-outline" transform="translate(851.000000, 405.000000)">
+                <path d="M57.6,28.8 C57.6,12.9 44.7,0 28.8,0 C12.9,0 0,12.9 0,28.8 C0,44.7 12.9,57.6 28.8,57.6 C44.7,57.6 57.6,44.7 57.6,28.8 Z" id="Path" stroke="#000000" stroke-width="4.8"></path>
+                <path d="M22.848,40.566 L40.0155,30.195 C40.5021508,29.8985161 40.7991193,29.3698524 40.7991193,28.8 C40.7991193,28.2301476 40.5021508,27.7014839 40.0155,27.405 L22.848,17.034 C22.3469849,16.733839 21.7230423,16.7271808 21.2157358,17.0165817 C20.7084293,17.3059827 20.3966095,17.8464613 20.3999726,18.4305 L20.3999726,39.1695 C20.3966095,39.7535387 20.7084293,40.2940173 21.2157358,40.5834183 C21.7230423,40.8728192 22.3469849,40.866161 22.848,40.566 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

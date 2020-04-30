@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>expand-outlineicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Brand---Iconography" transform="translate(-1011.000000, -405.000000)" stroke="#000000" stroke-width="4.8">
+            <g id="expand-outline" transform="translate(1014.000000, 408.000000)">
+                <polyline id="Path" points="52.8 36 52.8 52.8 36 52.8"></polyline>
+                <line x1="51.27" y1="51.2655" x2="33.6" y2="33.6" id="Path"></line>
+                <polyline id="Path" points="0 16.8 0 0 16.8 0"></polyline>
+                <line x1="1.53" y1="1.5345" x2="19.2" y2="19.2" id="Path"></line>
+                <polyline id="Path" points="36 0 52.8 0 52.8 16.8"></polyline>
+                <line x1="51.2655" y1="1.53" x2="33.6" y2="19.2" id="Path"></line>
+                <polyline id="Path" points="16.8 52.8 0 52.8 0 36"></polyline>
+                <line x1="1.5345" y1="51.27" x2="19.2" y2="33.6" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>shield-checkmark-outlineicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Brand---Iconography" transform="translate(-1326.000000, -799.000000)" stroke="#000000" stroke-width="4.8">
+            <g id="shield-checkmark-outline" transform="translate(1329.000000, 802.000000)">
+                <polyline id="Path" points="43.2 19.2 26.58 38.4 19.2 31.17"></polyline>
+                <path d="M62.265,9.6555 C48.852,7.2495 43.3065,5.4675 31.2,0 C19.0935,5.4675 13.548,7.2495 0.135,9.6555 C-2.295,48.1695 28.887,61.4685 31.2,62.4 C33.513,61.4685 64.695,48.1695 62.265,9.6555 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
