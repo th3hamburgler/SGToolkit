@@ -12,20 +12,20 @@ export default Controller.extend({
         items: [{
             title: 'Logo',
             route: 'docs.brand.logo',
-            icon: 'icon.logo',
+            icon: 'docs.logo',
           }, {
             title: 'Typography',
             route: 'docs.brand.typography',
-            icon: 'icon.typography',
+            icon: 'docs.typography',
           }, {
             title: 'Colour',
             route: 'docs.brand.colour',
-            icon: 'icon.colour',
+            icon: 'docs.colour',
           },
           {
             title: 'Icons',
             route: 'docs.brand.icons',
-            icon: 'icon.icons',
+            icon: 'docs.icons',
           }
         ],
       },
@@ -35,32 +35,32 @@ export default Controller.extend({
         items: [{
             title: 'UI Elements',
             route: 'docs.general.index',
-            icon: 'icon.ui',
+            icon: 'docs.ui',
           },
           {
             title: 'Structure',
             route: 'docs.general.structure',
-            icon: 'icon.structure',
+            icon: 'docs.structure',
           },
           {
             title: 'Navigation',
             route: 'docs.general.navigation',
-            icon: 'icon.navigation',
+            icon: 'docs.navigation',
           },
           {
             title: 'Tables',
             route: 'docs.general.tables',
-            icon: 'icon.tables',
+            icon: 'docs.tables',
           },
           {
             title: 'Forms',
             route: 'docs.general.forms',
-            icon: 'icon.forms',
+            icon: 'docs.forms',
           },
           {
             title: 'Images',
             route: 'docs.general.images',
-            icon: 'icon.image',
+            icon: 'docs.image',
           },
         ]
       },
@@ -70,26 +70,26 @@ export default Controller.extend({
         items: [{
             title: 'Lists',
             route: 'docs.components.lists',
-            icon: 'icon.list',
+            icon: 'docs.list',
           }, {
             title: 'Pagination',
             route: 'docs.components.pagination',
-            icon: 'icon.pagination',
+            icon: 'docs.pagination',
           },
           {
             title: 'Cards',
             route: 'docs.components.cards',
-            icon: 'icon.cards',
+            icon: 'docs.cards',
           },
           {
             title: 'Charts',
             route: 'docs.components.charts',
-            icon: 'icon.charts',
+            icon: 'docs.charts',
           },
           {
             title: 'Widgets',
             route: 'docs.components.widgets',
-            icon: 'icon.widgets',
+            icon: 'docs.widgets',
           },
         ],
       }, {
@@ -98,12 +98,12 @@ export default Controller.extend({
         items: [{
             title: 'Alerts',
             route: 'docs.info.alerts',
-            icon: 'icon.alerts',
+            icon: 'docs.alerts',
           },
           {
             title: 'Errors',
             route: 'docs.info.errors',
-            icon: 'icon.errors',
+            icon: 'docs.errors',
           },
         ],
       },
@@ -113,7 +113,7 @@ export default Controller.extend({
         items: [{
           title: 'Booking App',
           route: 'docs.layouts',
-          icon: 'icon.login.register',
+          icon: 'docs.login.register',
         }, ],
       },
     ]

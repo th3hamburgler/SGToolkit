@@ -3,5 +3,17 @@
     <h1 class="display-3 text-primary font-weight-light mb-0">Icons</h1>
   </header>
 
-  <p>Content todo</p>
+  <table class="table table-hover table-responsive-sm">
+    <tr>
+      <th>Icon</th>
+      <th>Name</th>
+    </tr>
+    {{#each icons as |icon|}}
+      <tr>
+        <td>{{svg-jar icon style="height:42px; width:42px;"}}</td>
+        <td>{{icon}}</td>
+      </tr>
+    {{/each}}
+  </table>
+
 </div>

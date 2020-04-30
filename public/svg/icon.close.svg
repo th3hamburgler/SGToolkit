@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>closeicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Brand---Iconography" transform="translate(-1340.000000, -561.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="close" transform="translate(1340.000000, 561.000000)">
+                <path d="M25.641,20.55 L39.891,6.3 C41.2993261,4.89415917 41.3013408,2.61282611 39.8955,1.2045 C38.4896592,-0.203826112 36.2083261,-0.205840831 34.8,1.2 L20.55,15.45 L6.3,1.2 C4.89167389,-0.208326112 2.60832611,-0.208326112 1.2,1.2 C-0.208326112,2.60832611 -0.208326112,4.89167389 1.2,6.3 L15.45,20.55 L1.2,34.8 C-0.208326112,36.2083261 -0.208326112,38.4916739 1.2,39.9 C2.60832611,41.3083261 4.89167389,41.3083261 6.3,39.9 L20.55,25.65 L34.8,39.9 C36.2083261,41.3083261 38.4916739,41.3083261 39.9,39.9 C41.3083261,38.4916739 41.3083261,36.2083261 39.9,34.8 L25.641,20.55 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
